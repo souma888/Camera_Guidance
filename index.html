@@ -2,124 +2,71 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#f4f3ee" />
-    <meta name="description" content="A phone-first capture guide for collecting overlapping landslide photographs from a safe viewpoint." />
-    <title>Terra Sight — Capture guide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#101713" />
+    <meta name="description" content="A camera guide for capturing overlapping photos of a landslide from a safe viewpoint." />
+    <title>Camera Guide</title>
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="app-shell">
+    <main class="capture-app">
       <header class="topbar">
-        <a class="brand" href="#top" aria-label="Terra Sight home">
-          <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M4 23.5 12.3 9l4.2 7.3 3.1-5.4L28 26H4v-2.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="m10 16.5 3.2 2.1 2.7-2.3 2.7 2 3.1-2.2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
-          <span class="brand-copy"><strong>terra sight</strong><small>FIELD CAPTURE</small></span>
-        </a>
-        <div class="topbar-meta"><span class="privacy-dot"></span> Photos stay on this device</div>
+        <div class="app-name"><span class="app-mark" aria-hidden="true">◉</span><span>CAMERA GUIDE</span></div>
+        <div class="top-status"><span class="live-dot" id="live-dot"></span><span id="live-text">CAMERA OFF</span></div>
       </header>
 
-      <main id="top">
-        <section class="hero">
-          <div class="hero-copy">
-            <div class="eyebrow"><span class="eyebrow-line"></span> CAPTURE GUIDE <span class="eyebrow-index">01 / 03</span></div>
-            <h1>Good models<br />start <em>on the ground.</em></h1>
-            <p class="hero-description">Follow a simple route around the slope. Keep the same feature in each frame, overlap your views, and build a photo set ready for 3D reconstruction.</p>
-            <div class="hero-facts">
-              <div><span class="fact-number">05</span><span class="fact-label">minimum views</span></div>
-              <span class="fact-divider"></span>
-              <div><span class="fact-number">~70%</span><span class="fact-label">target overlap</span></div>
-              <span class="fact-divider"></span>
-              <div><span class="fact-number">0</span><span class="fact-label">photos uploaded</span></div>
-            </div>
-          </div>
-          <div class="hero-graphic" aria-label="Illustration of five camera positions around a terrain slope">
-            <div class="graphic-label">YOUR CAPTURE PATH <span>5 VIEWPOINTS</span></div>
-            <svg class="terrain-graphic" viewBox="0 0 560 370" role="img" aria-labelledby="route-title route-desc">
-              <title id="route-title">Five camera positions around a slope</title><desc id="route-desc">An isometric slope with five numbered camera positions arranged along an overlapping arc.</desc>
-              <defs><linearGradient id="hill" x1="165" y1="106" x2="401" y2="269" gradientUnits="userSpaceOnUse"><stop stop-color="#c8c8a8"/><stop offset="1" stop-color="#9a9d78"/></linearGradient><linearGradient id="face" x1="239" y1="169" x2="345" y2="282" gradientUnits="userSpaceOnUse"><stop stop-color="#a5a680"/><stop offset="1" stop-color="#777f62"/></linearGradient><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 8 4 0 8" fill="none" stroke="#5f7557" stroke-width="1.4"/></marker></defs>
-              <ellipse cx="289" cy="277" rx="214" ry="51" fill="#ecebe2" stroke="#d8d7cd" stroke-dasharray="3 7"/>
-              <path d="M128 208c45-40 80-43 116-13 39-64 88-82 144-45 31 20 42 52 68 70-62 32-122 54-186 67-52 10-96 11-142-3-18-6-26-24 0-76Z" fill="url(#hill)" stroke="#737b60" stroke-width="1.5"/>
-              <path d="M128 208c45-40 80-43 116-13 39-64 88-82 144-45 31 20 42 52 68 70-49 18-97 34-147 45-54 12-103 16-156 2-18-5-42-16-25-59Z" fill="none" stroke="#e8e7d5" stroke-width="1.2" opacity=".8"/>
-              <path d="m200 193 31 44m42-72 15 66m43-89 1 79m39-47-17 57" stroke="#d6d4bd" stroke-width="1.2" opacity=".7"/>
-              <path d="M93 278c34 36 79 46 125 43m243-48c-34 32-72 45-110 48" fill="none" stroke="#5f7557" stroke-width="1.5" stroke-dasharray="4 5" marker-end="url(#arrow)"/>
-              <path d="M112 283c42-17 96-27 164-27 63 0 119 10 164 28" fill="none" stroke="#b6ad87" stroke-width="1" stroke-dasharray="2 6"/>
-              <g class="route-pin" data-route="0" transform="translate(107 267)"><circle r="17"/><text y="1">01</text><path d="M-7-19v-8h14v8l-7 5-7-5Z"/></g>
-              <g class="route-pin" data-route="1" transform="translate(190 246)"><circle r="17"/><text y="1">02</text><path d="M-7-19v-8h14v8l-7 5-7-5Z"/></g>
-              <g class="route-pin" data-route="2" transform="translate(286 242)"><circle r="17"/><text y="1">03</text><path d="M-7-19v-8h14v8l-7 5-7-5Z"/></g>
-              <g class="route-pin" data-route="3" transform="translate(382 250)"><circle r="17"/><text y="1">04</text><path d="M-7-19v-8h14v8l-7 5-7-5Z"/></g>
-              <g class="route-pin" data-route="4" transform="translate(455 271)"><circle r="17"/><text y="1">05</text><path d="M-7-19v-8h14v8l-7 5-7-5Z"/></g>
-              <text x="280" y="336" class="graphic-caption" text-anchor="middle">MOVE AROUND THE SCENE · KEEP THE SLOPE IN FRAME</text>
-            </svg>
-            <div class="graphic-note"><span class="note-mark">↗</span> A route to follow, not a measurement of the terrain.</div>
-          </div>
-        </section>
-
-        <section class="capture-section" aria-labelledby="capture-title">
-          <div class="section-heading">
-            <div><div class="eyebrow"><span class="eyebrow-line"></span> THE FIELD KIT</div><h2 id="capture-title">Build your image set</h2></div>
-            <div class="progress-wrap"><div class="progress-label"><span id="progress-text">0 of 5 views</span><span id="progress-status">NOT STARTED</span></div><div class="progress-track"><span id="progress-bar"></span></div></div>
-          </div>
-
-          <div class="capture-layout">
-            <div class="camera-column">
-              <div class="camera-frame" id="camera-frame">
-                <video id="camera-video" autoplay playsinline muted aria-label="Live camera preview"></video>
-                <canvas id="capture-canvas" hidden></canvas>
-                <div class="camera-overlay" aria-hidden="true">
-                  <div class="frame-corners"><i></i><i></i><i></i><i></i></div>
-                  <div class="overlap-guide"><span></span><span></span><span></span></div>
-                  <div class="horizon-guide"></div>
-                  <div class="camera-reticle"><span></span><span></span></div>
-                </div>
-                <div class="camera-placeholder" id="camera-placeholder">
-                  <div class="placeholder-icon"><svg viewBox="0 0 32 32" fill="none"><rect x="4" y="8" width="24" height="18" rx="3" stroke="currentColor" stroke-width="1.5"/><circle cx="16" cy="17" r="5" stroke="currentColor" stroke-width="1.5"/><path d="m10 8 2-3h8l2 3" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></div>
-                  <strong>Camera preview</strong><span>Start the camera to begin your capture route</span>
-                </div>
-                <div class="camera-topline"><span class="live-label"><i></i><span id="live-text">CAMERA OFF</span></span><span class="lens-label">REAR CAMERA</span></div>
-                <div class="view-label"><span class="view-step" id="view-step">01</span><span><strong id="view-name">Front left</strong><small id="view-hint">Start at one side of the slope</small></span></div>
-                <button class="flip-camera" id="flip-camera" type="button" aria-label="Switch camera" title="Switch camera" disabled><svg viewBox="0 0 24 24" fill="none"><path d="M20 7h-3l-2-2H9L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2Z" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="13" r="3.5" stroke="currentColor" stroke-width="1.5"/><path d="M18 3v4m0 0-2-2m2 2 2-2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-                <div class="camera-error" id="camera-error" role="alert" hidden></div>
-              </div>
-              <div class="camera-controls">
-                <button class="button button-dark" id="start-camera" type="button"><span class="button-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="14" height="12" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="m17 10 4-2v8l-4-2v-4Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span><span>Start camera</span></button>
-                <button class="button button-capture" id="take-photo" type="button" disabled><span class="shutter"></span><span>Take photo</span><kbd>SPACE</kbd></button>
-              </div>
-              <p class="camera-footnote"><svg viewBox="0 0 16 16" fill="none"><path d="M8 1.8 13 4v3.5c0 3-2.1 5.2-5 6.7-2.9-1.5-5-3.7-5-6.7V4l5-2.2Z" stroke="currentColor" stroke-width="1.3"/><path d="m5.8 7.9 1.5 1.5 3-3.1" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg> Nothing leaves your browser. Your photos stay on this device.</p>
+      <section class="camera-layout" aria-label="Camera capture guide">
+        <div class="camera-column">
+          <div class="camera-frame" id="camera-frame">
+            <video id="camera-video" autoplay playsinline muted aria-label="Live camera preview"></video>
+            <canvas id="capture-canvas" hidden></canvas>
+            <div class="camera-placeholder" id="camera-placeholder">
+              <div class="placeholder-icon" aria-hidden="true">◉</div>
+              <strong>Ready to guide your capture</strong>
+              <span>Start the rear camera and frame the landslide from safe ground.</span>
             </div>
 
-            <aside class="route-column">
-              <div class="route-card">
-                <div class="card-kicker">YOUR ROUTE <span>5 MINIMUM</span></div>
-                <ol class="route-list" id="route-list">
-                  <li class="route-item active" data-route-item="0"><span class="route-number">01</span><span class="route-item-copy"><strong>Front left</strong><small>Start at one side</small></span><span class="route-state">NEXT</span></li>
-                  <li class="route-item" data-route-item="1"><span class="route-number">02</span><span class="route-item-copy"><strong>Front center</strong><small>Keep the same features</small></span><span class="route-state"></span></li>
-                  <li class="route-item" data-route-item="2"><span class="route-number">03</span><span class="route-item-copy"><strong>Front right</strong><small>Overlap the last frame</small></span><span class="route-state"></span></li>
-                  <li class="route-item" data-route-item="3"><span class="route-number">04</span><span class="route-item-copy"><strong>Left oblique</strong><small>Angle toward the slope</small></span><span class="route-state"></span></li>
-                  <li class="route-item" data-route-item="4"><span class="route-number">05</span><span class="route-item-copy"><strong>Right oblique</strong><small>Close the coverage arc</small></span><span class="route-state"></span></li>
-                </ol>
-                <div class="route-tip"><span class="tip-icon">✳</span><span><strong>Overlap is your safety net.</strong> Keep about 70% of the previous view in the next photo.</span></div>
-              </div>
-              <div class="photo-set-card">
-                <div class="photo-set-heading"><div><span class="card-kicker">PHOTO SET</span><span class="photo-count" id="photo-count">0 / 5</span></div><button id="clear-photos" class="text-button" type="button" hidden>Clear all</button></div>
-                <div class="thumbnail-grid" id="thumbnail-grid"><div class="empty-slot"><span>+</span><small>YOUR PHOTOS<br />APPEAR HERE</small></div><div class="empty-slot"><span>+</span><small>YOUR PHOTOS<br />APPEAR HERE</small></div><div class="empty-slot"><span>+</span><small>YOUR PHOTOS<br />APPEAR HERE</small></div><div class="empty-slot"><span>+</span><small>YOUR PHOTOS<br />APPEAR HERE</small></div><div class="empty-slot"><span>+</span><small>YOUR PHOTOS<br />APPEAR HERE</small></div></div>
-                <div class="set-footer"><span id="set-footer-text">Capture at least 5 views to complete the set.</span><button class="download-button" id="download-set" type="button" disabled>Save photos <span>↓</span></button></div>
-              </div>
-            </aside>
+            <div class="camera-overlay" aria-hidden="true">
+              <div class="composition-frame"><i></i><i></i><i></i><i></i></div>
+              <div class="horizon-guide"><span></span></div>
+              <div class="target-footprint"><span></span><i></i><i></i><i></i></div>
+              <div class="reticle"><i></i><i></i></div>
+              <div class="direction-cue" id="direction-cue"><span class="direction-arrow" id="direction-arrow">↗</span><span><small>NEXT VIEW</small><strong id="direction-text">Move right</strong></span><b id="angle-value">+20°</b></div>
+              <div class="overlap-meter" id="overlap-meter"><span class="meter-icon">◌</span><span><small>OVERLAP WITH LAST PHOTO</small><strong id="overlap-value">—</strong></span><span class="meter-bar"><i id="overlap-bar"></i></span></div>
+            </div>
+
+            <div class="camera-topline"><span class="lens-label" id="lens-label">REAR CAMERA</span><button class="flip-camera" id="flip-camera" type="button" aria-label="Switch camera" title="Switch camera" disabled>↻</button></div>
+            <div class="camera-bottomline"><span class="shot-counter"><b id="shot-count">0</b><small> / 5 MINIMUM</small></span><span class="shot-instruction" id="shot-instruction">Capture the first view</span></div>
+            <div class="camera-error" id="camera-error" role="alert" hidden></div>
           </div>
-        </section>
 
-        <section class="field-notes">
-          <div class="field-title"><span class="eyebrow-line"></span><span>BEFORE YOU BEGIN</span></div>
-          <div class="field-note"><span>01</span><p><strong>Choose a safe viewpoint.</strong> Never approach an active landslide, unstable slope, or cliff edge to get a better angle.</p></div>
-          <div class="field-note"><span>02</span><p><strong>Move around the scene, not across the hazard.</strong> Stay on stable, authorized ground and keep a consistent distance where possible.</p></div>
-          <div class="field-note"><span>03</span><p><strong>Five is a starting minimum.</strong> Complex terrain, weak texture, or occlusion may need more photos. This guide cannot confirm reconstruction quality.</p></div>
-        </section>
-      </main>
+          <div class="capture-controls">
+            <button class="button button-start" id="start-camera" type="button">Start camera</button>
+            <button class="button button-capture" id="take-photo" type="button" disabled><span class="shutter"></span><span>Take photo</span></button>
+          </div>
+          <div class="camera-guidance"><span class="guidance-icon">↔</span><span id="guidance-message">After each photo, move sideways a short step. Keep the same slope features in view.</span><span class="privacy-label">PHOTOS STAY ON THIS DEVICE</span></div>
+        </div>
 
-      <footer class="footer"><span>Terra Sight <i>·</i> Field capture prototype</span><span>EXPERIMENTAL TOOL <i>·</i> NOT FOR EMERGENCY OR ENGINEERING DECISIONS</span></footer>
-    </div>
+        <aside class="capture-sidebar" aria-label="Capture progress and photos">
+          <section class="progress-card">
+            <div class="card-heading"><span>CAPTURE PROGRESS</span><span id="progress-status">0 / 5</span></div>
+            <div class="progress-track"><i id="progress-bar"></i></div>
+            <div class="progress-foot"><span id="progress-text">At least 5 overlapping views</span><span id="overlap-target">TARGET ≥70%</span></div>
+          </section>
+
+          <section class="photo-card">
+            <div class="card-heading"><span>YOUR PHOTOS</span><button id="clear-photos" class="text-button" type="button" hidden>Clear</button></div>
+            <div class="thumbnail-grid" id="thumbnail-grid"></div>
+            <p class="photo-note" id="photo-note">Your captured frames appear here.</p>
+            <button class="download-button" id="download-set" type="button" disabled>Save photo set <span>↓</span></button>
+          </section>
+
+          <div class="safety-note"><span class="safety-mark">!</span><span><strong>Stay on safe, stable ground.</strong> Never move closer to an active landslide or an unstable edge for a better angle.</span></div>
+          <p class="estimate-note">Overlap is estimated from visual similarity between frames. It is a capture aid, not a 3D measurement.</p>
+        </aside>
+      </section>
+    </main>
     <script src="./app.js" defer></script>
   </body>
 </html>
-
