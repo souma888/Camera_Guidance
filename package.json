@@ -1,0 +1,10 @@
+{
+  "name": "terra-sight-camera-guide",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs"
+  }
+}
+
